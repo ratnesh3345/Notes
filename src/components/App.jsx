@@ -31,7 +31,14 @@ function App() {
     useEffect(()=>{
         const storedData = localStorage.getItem("notes");
         if(storedData){
+          try{
             setNotes(JSON.parse(storedData));
+          }catch(error){
+            console.error(error);
+          }
+           
+        }else{
+          setNotes([]);
         }
     },[])
 

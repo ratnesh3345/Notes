@@ -5,7 +5,7 @@ const Header = () =>{
     return(
         <header>
             
-            <h1> <HighlightIcon /> My Notes</h1>
+            <h1> <HighlightIcon /> सूचनाकोश</h1>
         </header>
     )
 }
